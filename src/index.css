@@ -10,3 +10,11 @@ body,
 html {
 	font-family: "Quicksand", sans-serif;
 }
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none!important;
+}
