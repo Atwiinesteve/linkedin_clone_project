@@ -34,11 +34,11 @@ export default function UserContainer() {
 						style={{
 							objectFit: "cover",
 							position: "absolute",
-							top: "-90px",
-							left: "-130px",
-							width: "180px",
-							height: "180px",
-							border: "8px solid white",
+							top: "-70px",
+							left: "-90px",
+							width: "140px",
+							height: "140px",
+							border: "6px solid white",
 						}}
 						src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlJTIwZmFjZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
 					/>

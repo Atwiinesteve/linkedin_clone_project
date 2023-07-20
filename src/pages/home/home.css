@@ -1,20 +1,11 @@
 .main__container {
-    margin: 20px 10rem;
+    margin: 3rem 10rem 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.one {
-    flex: 0.3;
-    background-color: red;
-    height: 100%;
-    width: 100%;
+    gap: 30px;
 }
 
 .two {
     flex: 0.7;
-    background-color: blue;
-    height: 100%;
-    width: 100%;
 }
