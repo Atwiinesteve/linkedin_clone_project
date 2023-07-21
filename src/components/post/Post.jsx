@@ -2,69 +2,101 @@
 import React from "react";
 
 // icons
+import { Avatar } from "@mui/material";
+import { FiThumbsUp } from "react-icons/fi";
+import { BiCommentDots } from "react-icons/bi";
+import { PiShareFatLight } from "react-icons/pi";
+import { GrSend } from "react-icons/gr";
 
 // styles
 import "../post/post.css";
-import { Avatar } from "@mui/material";
 
 // components
-export default function Post() {
+export default function Post({ post }) {
 	return (
 		<>
 			<div className="post__card">
 				<div className="profile__details__header">
 					<div className="profile__details">
-						<Avatar />
+						<Avatar
+							style={{
+								marginRight: "1rem",
+								objectFit: "cover",
+							}}
+							src={post.avatar_image}
+						/>
 						<div className="details">
-							<div className="name__date">
-								<p>Alice Blake</p>
-								<p>. 1st</p>
+							<div
+								className="name__date"
+								style={{
+									display: "flex",
+									alignItems: "center",
+									justifyContent: "left",
+								}}>
+								<p>{post.name}&nbsp;</p>
+								<p>{post.when}</p>
 							</div>
-							<div className="occupation">
-								<p>Building a Digital Media Co. | Marketing Marverick</p>
+							<div
+								className="occupation"
+								style={{ fontSize: "14px", letterSpacing: "0px" }}>
+								<p>{post.occupation}</p>
 							</div>
 						</div>
 					</div>
-					<div className="time">
-						<p>29 min ago</p>
+					<div
+						className="time"
+						style={{
+							display: "flex",
+							alignItems: "center",
+							justifyContent: "left",
+						}}>
+						<p style={{ marginRight: "1rem" }}>{post.duration}</p>
 						<div>...</div>
 					</div>
 				</div>
 				<div className="post__data">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-						minus architecto voluptatem totam cum. Nihil vel deserunt nulla
-						dolorum obcaecati, quisquam optio incidunt quod a? Inventore,
-						laborum officiis. Error, obcaecati. Porro fuga voluptate unde
-						nesciunt iure natus dignissimos voluptas ipsum rerum aspernatur
-						excepturi culpa obcaecati facere placeat vitae laboriosam, maxime id
-						optio maiores modi. Repellendus doloribus accusantium minus
-						laboriosam repellat nesciunt culpa id perspiciatis veniam
-						voluptatibus soluta et dolores vero molestias cupiditate fugiat,
-						quasi veritatis sapiente necessitatibus similique fugit! Mollitia
-						maiores pariatur voluptatum sunt omnis, quaerat a aut fugit saepe
-						velit doloremque. Laboriosam asperiores aperiam dolorum vel error,
-						provident tempora.
-					</p>
+					<p style={{lineHeight: "1.7"}}>{post.text}</p>
 				</div>
-                <div className="post__image">
-                    <img src="" alt="" />
-                    <div className="rating"></div>
-                </div>
-                <div className="like__comment__share__send">
-                    <div className="like">
-                        <p>Like</p>
-                    </div>
-                    <div className="comment">
-                        <p>Comment</p>
-                    </div>
-                    <div className="share">
-                        <p>Share</p>
-                    </div>
-                    <div className="send">
-                        <p>Send</p>
-                    </div>
-                </div>
+				<div className="post__image">
+					<img
+						style={{
+							width: "100%",
+							height: "300px",
+							objectFit: "cover",
+							margin: "1rem 0 4px 0",
+						}}
+						src={post.post_image}
+						alt=""
+					/>
+					<div className="rating">
+						<div className="thumbs">
+							<FiThumbsUp fontSize={"10px"} />
+						</div>
+						<p>2{post.likes}</p>
+						<div className="comments">
+							<BiCommentDots fontSize={"10px"} />
+						</div>
+						<p>{post.comments}</p>
+					</div>
+				</div>
+				<div className="like__comment__share__send">
+					<div className="like">
+						<FiThumbsUp fontSize={"20px"} />
+						<p>Like</p>
+					</div>
+					<div className="comment">
+						<BiCommentDots fontSize={"20px"} />
+						<p>Comment</p>
+					</div>
+					<div className="share">
+						<PiShareFatLight fontSize={"20px"} />
+						<p>Share</p>
+					</div>
+					<div className="send">
+						<GrSend fontSize={"20px"} />
+						<p>Send</p>
+					</div>
+				</div>
 			</div>
 		</>
 	);
