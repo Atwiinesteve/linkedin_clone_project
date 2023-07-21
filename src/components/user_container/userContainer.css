@@ -1,17 +1,17 @@
 .side__bar__area {
     width: 400px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    flex-direction: column!important;
+    flex: 0.25;
 }
 
 .user__container {
     /* padding: 1rem; */
     width: 400px;
     height: 430px;
-    flex: 0.25;
     display: flex;
     align-items: center;
     justify-content: left;

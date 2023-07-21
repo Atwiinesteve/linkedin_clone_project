@@ -1,0 +1,33 @@
+.recent__container {
+	width: 22rem;
+	height: 33rem!important;
+	position: fixed;
+	top: 40rem;
+	left: 13rem;
+	z-index: 4;
+}
+
+.recent__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.recent__header p {
+    color: gray;
+}
+
+.recent__header a {
+    text-decoration: underline!important;
+}
+
+.recent__data {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.recent__data .text {
+    margin-left: 1rem;
+}
