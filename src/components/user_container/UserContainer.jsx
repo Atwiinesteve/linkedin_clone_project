@@ -6,14 +6,19 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import { Avatar } from "@mui/material";
 
+// data imports
+import {recents} from "../../data/recents"
+
 // styles
 import "../user_container/userContainer.css";
+import Recent from "../recent/Recent";
 
 // component
 export default function UserContainer() {
 	return (
 		<Fragment>
 			<div className="side__bar__area">
+
 				<div className="user__container" >
 					<img
 						className="background__image"
@@ -79,6 +84,16 @@ export default function UserContainer() {
 						</div>
 					</div>
 				</div>
+
+				<div className="recent">
+					{
+						recents.map((recent) => (
+							<Recent key={recent.id} recent={recent} />
+						))
+					}
+				</div>
+
+				<div className="groups"></div>
 
 			</div>
 		</Fragment>
