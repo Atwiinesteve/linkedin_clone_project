@@ -4,6 +4,7 @@ import React from 'react';
 // styles
 import "../featured_stories/featuredStories.css";
 import CreatePostInput from '../create_post_input/CreatePostInput';
+import Post from '../post/Post';
 
 // components
 export default function FeaturedStories() {
@@ -11,6 +12,7 @@ export default function FeaturedStories() {
     <>
         <div className="stories__container">
             <CreatePostInput />
+            <Post />
         </div>
     </>
   )
