@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap");
+
+.post__card {
+	width: 100%;
+    padding: 1rem;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	flex-direction: column;
+	margin: 1rem 0;
+    box-shadow: 6px 13px 20px 0px #0000ff14;
+}
+
+.profile__details__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.6rem 1rem;
+}
+
+.profile__details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.post__data p {
+	font-family: "Albert Sans", sans-serif;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	gap: 10px;
+}
+
+.thumbs,
+.comments {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	background-color: blue;
+	color: white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.like__comment__share__send {
+	gap: 80px;
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+    color: rgb(129, 129, 129);
+}
+
+.like,
+.comment,
+.share,
+.send {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    gap: 10px;
+}

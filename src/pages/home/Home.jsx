@@ -13,8 +13,8 @@ export default function Home() {
 	return (
 		<Fragment>
 			<MainNavbar />
-			<div className="main__container">
-				<UserProfile />
+			<div className="main__container" style={{marginTop: "4rem"}}>
+				<UserProfile  />
 				<FeaturedStories />
 			</div>
 		</Fragment>

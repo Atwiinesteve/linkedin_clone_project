@@ -1,8 +1,9 @@
 .post__input {
+    /* position: fixed; */
     width: 100%;
     height: 90px;
     padding: 0.6rem 1rem;
-    box-shadow: 6px 13px 20px 0px #0000ff14;;
+    box-shadow: 6px 13px 20px 0px #0000ff14;
 }
 
 input {
@@ -20,7 +21,7 @@ input[type=text] {
 }
 
 ::placeholder {
-    color: gray;
+    color: gray!important;
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
 }

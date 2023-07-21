@@ -6,6 +6,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.8rem 10rem;
+    position: fixed;
+    z-index: 20;
 }
 
 .logo__input {
@@ -20,6 +22,7 @@ nav {
     align-items: center;
     justify-content: left;
     width: 400px;
+    color: #fff!important;
 }
 
 .input input {
@@ -32,14 +35,14 @@ nav {
 .input input[type="text"],
 .input input[type=text] {
     font-family: "Quicksand", sans-serif;
-    color: white;
+    color: white!important;
     font-weight: bold;
 }
 
 .input input[type="search"],
 .input input[type=search] {
     font-family: "Quicksand", sans-serif;
-    color: white;
+    color: white!important;
     font-weight: bold;
 }
 
@@ -51,7 +54,7 @@ nav {
     width: 100%;
     margin-left: 7rem;
     font-family: "Quicksand", sans-serif;
-    color: white;
+    color: white!important;
     font-weight: bold;
     letter-spacing: 1px;
 }
